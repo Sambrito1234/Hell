@@ -1,0 +1,600 @@
+body{
+	margin:0px;
+	overflow-x:hidden;
+	width:100vw;
+	height:100vh;
+	background-color:rgb(199, 199, 241);
+	font-family:"furmanite";
+	user-select:none;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+}
+button{
+	outline:none;
+	transition-property: background-color color;
+    transition-duration: 0.4s;
+}
+ul{
+	list-style-type:square;
+	list-style-position:inside;
+}
+/*--------*/
+.inline-image{
+	height:1em;
+}
+.heading{
+	color:black;
+	font-size:2.25em;
+	font-family:"transformers";
+	text-transform:uppercase;
+	text-shadow:
+    -0.02em -0.02em 0 red,
+    0.02em -0.02em 0 goldenrod,
+    -0.02em 0.02em 0 blue,
+    0.02em 0.02em 0 green;
+}
+.line{
+	color:black;
+	text-shadow:
+    -0.02em -0.02em 0 forestgreen,
+    0.02em -0.02em 0 forestgreen,
+    -0.02em 0.02em 0 forestgreen,
+    0.02em 0.02em 0 forestgreen;
+}
+.line:hover{
+	color:rgb(40,40,40)
+}
+.linkimage:hover{
+	opacity:0.85;
+}
+.linktext:hover{
+	color:slategray;
+}
+.drop-content{
+	left:0px;
+	right:0px;
+	width:100%;
+	font-size:0.5em;
+	height:2em;
+	font-family:"batmanforeveralternate";
+	background-color:goldenrod;
+	border-left:solid;
+	border-top:solid;
+	border-bottom:dashed;
+	border-right:solid;
+	border-color:darkgoldenrod;
+}
+.drop-content:hover{
+	color:white;
+	background-color:darkgoldenrod;
+	border-color:goldenrod;
+}
+.drop-content.expanded{
+	background-color:steelblue;
+	border-color:dodgerblue;
+}
+.drop-content.expanded:hover{
+	background-color:navy;
+	border-color:blue;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media screen and (orientation:landscape){
+.thumbnail-image{
+	width:20vw;
+	height:20vw;
+	max-width:70vw;
+	max-height:60vh;
+	border:ridge;
+	border-color:gray;
+	border-width:7px;
+	outline-style:ridge;
+	outline-color:silver;
+	outline-width:2px;
+}
+.thumbnail-image.thumbnail-wide{
+	width:45vw;
+	height:20vw;
+}
+.thumbnail-image.thumbnail-xtrawide{
+	width:75vw;
+	height:30vw;
+}
+.thumbnail-image.thumbnail-long{
+	width:16vw;
+	height:20vw;
+}
+.thumbnail-image.thumbnail-xtralong{
+	width:20vw;
+	height:25vw;
+}
+.thumbnail-image.thumbnail-xxtralong{
+	width:24vw;
+	height:30vw;
+}
+
+#headback{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:12vh;
+	border:none;
+	background-color:rgb(0,0,15);
+	border-bottom:solid;
+	border-color:dodgerblue;
+	z-index:1;
+}
+#sparkhead{
+	position:fixed;
+	top:1vh;
+	width:20vw;
+	height:10vh;
+	left:40vw;
+	z-index:1
+}
+#bodycontent{
+	margin-right:0vw;
+	margin-left:0vw;
+	margin-top:16vh;
+	margin-bottom:7vh;
+	letter-spacing:2px;
+	padding:0px;
+	color:rgb(25,10,10);
+	padding-left:2vw;
+	padding-right:2vw;
+	font-size:1.75em;
+	text-shadow:
+    -0.019em -0.019em 0 green,
+    0.019em -0.019em 0 green,
+    -0.019em 0.019em 0 green,
+    0.019em 0.019em 0 green;
+}
+#navbutton{
+	position:fixed;
+	left:0px;
+	top:2vh;
+	height:8vh;
+	z-index:2;
+}
+#navbutton:hover{
+	opacity:0.5;
+}
+/*-------------*/
+#tab {
+	bottom:8vh;
+	top:12vh;
+	height:81%;
+	position:fixed;
+	left:0px;
+	width:12.5vw;
+	border-right:solid;
+	border-color:red;
+    overflow: hidden;
+    background-color: rgb(0,00,20);
+	z-index:2;
+	display:none;
+}
+#tab button {
+    float:right;
+    display: block;
+	width:100%;
+	border:none;
+    color: white;
+	font-family:"batmanforeveralternate";
+    text-align: center;
+    padding:5px;
+    text-decoration: overline;
+	background-color: inherit;
+}
+#tab button.active{
+	color:black;
+	background-color:steelblue ;
+	border-left:solid;
+	border-color: blue;
+	outline:none;
+	border-width:0.5em;
+}
+#tab button:hover {
+    background-color: navy;
+	color:blue;
+}
+/*----------------*/
+#footer{
+	position:fixed;
+	width:100vw;
+	bottom:0px;
+	height:7vh;
+	background-color:black;
+	border:none;
+	border-top:solid;
+	border-color:green;
+}
+#owner{
+	font-size:1.3em;
+	font-family:"alien league";
+	color:white;
+	text-shadow:0px 0px 0 black;
+}
+#copyright{
+	font-family:"alien league";
+	color:white;
+	text-shadow:0px 0px 0 black;
+}
+#author{
+	font-family:"alien league";
+	position:absolute;
+	color:white;
+	right:2vw;
+	text-shadow:0px 0px 0 black;
+}
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media (orientation:portrait) and (max-width:675px){
+.heading{
+	color:white;
+}
+.thumbnail-image{
+	width:75vw;
+	height:75vw;
+	max-width:95vw;
+	max-height:80vh;
+	border:ridge;
+	border-color:gray;
+	border-width:7px;
+	outline-style:ridge;
+	outline-color:silver;
+	outline-width:2px;
+}
+.thumbnail-image.thumbnail-wide{
+	width:80vw;
+	height:45vw;
+}
+.thumbnail-image.thumbnail-xtrawide{
+	width:95vw;
+	height:40vw;
+}
+.thumbnail-image.thumbnail-long{
+	width:65vw;
+	height:80vw;
+}
+.thumbnail-image.thumbnail-xtralong{
+	width:65vw;
+	height:90vw;
+}
+.thumbnail-image.thumbnail-xxtralong{
+	width:60vw;
+	height:110vw;
+}
+#headback{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:10vh;
+	border:none;
+	background-color:rgb(0,0,15);
+	border-bottom:solid;
+	border-color:dodgerblue;
+	z-index:1;
+}
+#sparkhead{
+	position:fixed;
+	top:1vh;
+	width:40vw;
+	height:8vh;
+	left:30vw;
+	z-index:1
+}
+#bodycontent{
+	max-width:100vw;
+	margin-right:0vw;
+	margin-left:0vw;
+	margin-top:16vh;
+	margin-bottom:7vh;
+	letter-spacing:1.5px;
+	color:white;
+	padding:0px;
+	padding-left:2vw;
+	padding-right:2vw;
+	font-size:1.75em;
+	overflow-x:hidden;
+	text-shadow:
+    -0.019em -0.019em 0 green,
+    0.019em -0.019em 0 green,
+    -0.019em 0.019em 0 green,
+    0.019em 0.019em 0 green;
+}
+#navbutton{
+	position:fixed;
+	left:0px;
+	top:2vh;
+	height:6vh;
+	z-index:2;
+}
+#navbutton:hover{
+	opacity:0.5;
+}
+
+/*-------------*/
+#tab {
+	bottom:7vh;
+	top:10vh;
+	position:fixed;
+	left:0px;
+	width:75vw;
+	border-right:solid;
+	border-color:red;
+    overflow: hidden;
+    background-color: rgb(0,00,20);
+	z-index:2;
+	display:none;
+	transition-property: background-color;
+    transition-duration: 2s;
+}
+#tab button {
+    float:right;
+    display: block;
+	width:100%;
+	border:none;
+    color: white;
+	font-family:"batmanforeveralternate";
+    text-align: center;
+    padding:5px;
+    text-decoration: overline;
+	background-color: inherit;
+}
+#tab button.active{
+	color:black;
+	background-color:steelblue ;
+	border-left:solid;
+	border-color: blue;
+	outline:none;
+	border-width:0.5em;
+}
+#tab button:hover {
+    background-color: navy;
+	color:blue;
+}
+/*----------------*/
+#footer{
+	position:fixed;
+	width:100vw;
+	bottom:0px;
+	height:7vh;
+	background-color:black;
+	border:none;
+	border-top:solid;
+	border-color:green;
+}
+#owner{
+	font-size:1.3em;
+	font-family:"alien league";
+	color:white;
+	text-shadow:0px 0px 0 black;
+}
+#copyright{
+	font-family:"alien league";
+	color:white;
+	text-shadow:0px 0px 0 black;
+}
+#author{
+	font-family:"alien league";
+	position:absolute;
+	color:white;
+	right:2vw;
+	text-shadow:0px 0px 0 black;
+}
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media (orientation:portrait) and (min-width:675px){
+.thumbnail-image{
+	width:40vw;
+	height:40vw;
+	max-width:96vw;
+	max-height:80vh;
+	border:ridge;
+	border-color:gray;
+	border-width:7px;
+	outline-style:ridge;
+	outline-color:silver;
+	outline-width:2px;
+}
+.thumbnail-image.thumbnail-wide{
+	width:80vw;
+	height:45vw;
+}
+.thumbnail-image.thumbnail-xtrawide{
+	width:95vw;
+	height:40vw;
+}
+.thumbnail-image.thumbnail-long{
+	width:55vw;
+	height:80vw;
+}
+.thumbnail-image.thumbnail-xtralong{
+	width:55vw;
+	height:90vw;
+}
+.thumbnail-image.thumbnail-xxtralong{
+	width:60vw;
+	height:110vw;
+}
+
+#headback{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:10vh;
+	border:none;
+	background-color:rgb(0,0,15);
+	border-bottom:solid;
+	border-color:dodgerblue;
+	z-index:1;
+}
+#sparkhead{
+	position:fixed;
+	top:1vh;
+	width:40vw;
+	height:8vh;
+	left:30vw;
+	z-index:1
+}
+#bodycontent{
+	margin-right:0vw;
+	margin-left:0vw;
+	margin-top:16vh;
+	margin-bottom:7vh;
+	letter-spacing:3px;
+	padding:0px;
+	color:rgb(25,10,10);
+	padding-left:2vw;
+	padding-right:2vw;
+	font-size:2.75em;
+	text-shadow:
+    -0.02em -0.02em 0 green,
+    0.02em -0.02em 0 green,
+    -0.02em 0.02em 0 green,
+    0.0em 0.02em 0 green;
+}
+#navbutton{
+	position:fixed;
+	left:0px;
+	top:2vh;
+	height:6vh;
+	z-index:2;
+}
+#navbutton:hover{
+	opacity:0.5;
+}
+
+/*-------------*/
+#tab {
+	bottom:7vh;
+	top:10vh;
+	position:fixed;
+	left:0px;
+	width:75vw;
+	border-right:solid;
+	border-color:red;
+    overflow: hidden;
+    background-color: rgb(0,00,20);
+	z-index:2;
+	display:none;
+	transition-property: background-color;
+    transition-duration: 2s;
+}
+#tab button {
+    float:right;
+	font-size:2em;
+    display: block;
+	width:100%;
+	border:none;
+    color: white;
+	font-family:"batmanforeveralternate";
+    text-align: center;
+    padding:5px;
+    text-decoration: overline;
+	background-color: inherit;
+}
+#tab button.active{
+	color:black;
+	background-color:steelblue ;
+	border-left:solid;
+	border-color: blue;
+	outline:none;
+	border-width:0.5em;
+}
+#tab button:hover {
+    background-color: navy;
+	color:blue;
+}
+/*----------------*/
+#footer{
+	position:fixed;
+	width:100vw;
+	bottom:0px;
+	height:7vh;
+	background-color:black;
+	border:none;
+	border-top:solid;
+	border-color:green;
+}
+#owner{
+	font-family:"alien league";
+	font-size:1.5em;
+	color:white;
+	text-shadow:0px 0px 0 black;
+}
+#copyright{
+	font-family:"alien league";
+	font-size:1.5em;
+	color:white;
+	text-shadow:0px 0px 0 black;
+}
+#author{
+	font-family:"alien league";
+	position:absolute;
+	font-size:1.5em;
+	color:white;
+	right:2vw;
+	text-shadow:0px 0px 0 black;
+}
+}
+table {
+	color:black;
+}
+body{
+	width:100vw;
+	max-width:100vw;
+	overflow-x:hidden;
+}
+.subcontent{
+	display:none;/*add display:block to element-by-ID to be shown by-default in individual CCS file for each page*/
+}
+h2{
+	font-family:"Alien league";
+	color:silver;
+	text-transform:uppercase;
+	font-size:1.5em;
+	text-shadow:
+	-0.015em -0.015em 0 blue,
+    0.015em -0.015em 0 blue,
+    -0.015em 0.015em 0 blue,
+    0.015em 0.015em 0 blue;
+}
+h3{
+	font-family:"Alien league";
+	color:slategray;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	text-transform:uppercase;
+	font-size:1.25em;
+	text-shadow:
+	-0.015em -0.015em 0 green,
+    0.015em -0.015em 0 green,
+    -0.015em 0.015em 0 green,
+    0.015em 0.015em 0 green;
+}
+/*---------------------------------------*/
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+	background-color:rgb(50,10,0);
+}
+body::-webkit-scrollbar-thumb {
+	background-size:10px; 
+	background-color:firebrick;
+    background-image:url("../assets/Scroll1.png"); 
+}
+body::-webkit-scrollbar-thumb:hover {
+	background:rgb(0,0,0);
+	background-size:10px; 
+	background-color:navy;
+	background-image:url("../assets/Scroll2.png");
+	opacity:0.8;
+}

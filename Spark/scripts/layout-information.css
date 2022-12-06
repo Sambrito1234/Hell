@@ -1,0 +1,91 @@
+@media (orientation:landscape){
+#subtab {
+	height:4vh;
+	position:fixed;
+	width:100vw;
+	left:0vw;
+	top:12vh;
+	border-left:solid;
+	border-color:silver;
+	border-width:2%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+}
+#subtab button {
+    float: left;
+    display: block;
+	border:none;
+    color: white;
+	width:25%;
+	font-size:2.25vh;
+	height:4vh;
+	font-family:"batmanforeveralternate";
+    text-align: center;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:0px;
+	padding-right:0px;
+    text-decoration: overline;
+	background-color: black;
+}
+#subtab button.on{
+	color:black;
+	background-color: green ;
+	outline:none;
+}
+#subtab button:hover{
+	color:darkslategray;
+	background-color: forestgreen;
+	outline:none;
+}
+#spotlight-bot-info{
+	display:block
+}
+/*______________*/
+}
+@media (orientation:portrait){
+#subtab {
+	height:6vh;
+	position:fixed;
+	width:100vw;
+	left:0vw;
+	top:10vh;
+	border-left:solid;
+	border-color:silver;
+	border-width:2%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+	z-index:1;
+}
+#subtab button {
+    float: left;
+    display: block;
+	border:none;
+    color: white;
+	width:50%;
+	font-size:1.75vh;
+	height:3vh;
+	font-family:"batmanforeveralternate";
+    text-align: center;
+	padding-top:7px;
+	padding-bottom:2px;
+	padding-left:0px;
+	padding-right:0px;
+    text-decoration: overline;
+	background-color: black;
+}
+#subtab button.on{
+	color:black;
+	background-color: green ;
+	outline:none;
+}
+#subtab button:hover{
+	color:green;
+	background-color: forestgreen;
+	outline:none;
+}
+#spotlight-bot-info{
+	display:block
+}
+/*______________*/
+}
